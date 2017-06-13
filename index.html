@@ -6,7 +6,7 @@
   	<title> HTML Forms Lab 3 </title>
   </head>
   <body>
-  	<h1> Volunteer Form
+  	<h1> Volunteer Form</h1>
   	<form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
   	  <fieldset>
   	  	<legend> My Information: </legend>
@@ -33,7 +33,7 @@
         </p>
   	  </fieldset>
 
-    <fieldset>
+      <fieldset>
         <legend> Availability </legend>
           <label>Days Availability: </label>
           <p><label><input type="checkbox" name="available_field[]" value="Monday"> Monday </label></p>
@@ -44,7 +44,17 @@
           <p><label><input type="checkbox" name="available_field[]" value="Saturday"> Saturday </label></p>
           <p><label><input type="checkbox" name="available_field[]" value="Sunday"> Sunday </label></p>
 
-
-
-  
+      <label> Comments: </label>
+        <p>
+          <textarea cols="60" rows="10"  name="comments_field" id="text_area">
+          </textarea>
+        </p>
+        <p>
+          <input type="hidden" name="hidden_field" value="adimnych@hawk.iit.edu"> 
+        </p>
+      </fieldset>  
+      <p> <input type="submit" value="Send Me"> </p>
+    </form>
   </body>
+</html>
+
